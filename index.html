@@ -11,9 +11,11 @@
 </head>
 <body>
     <h3 class="code">The Code Review</h3>
+    <section class="signup">
     <h2>Signup for our newsletter</h2>
         <p>Get the latest news on how your code is doing right in your inbox</p>
-        
+    </section>
+
      <form action="index.html" method="post">
     
     
@@ -21,9 +23,11 @@
 
 
             <legend><h3>Contact Information</h3></legend><br>
+            
+        
             <label for="name">Full Name</label>
             <input type="text" id="name" name="user_name"><br>
-
+        
             <label for="email">Email Address</label><br>
             <input type="text" id="email" name="user_email"><br>
 
@@ -38,6 +42,7 @@
 
             <label for="state">State</label><br>
             <select id="state" name="user_state"><br>
+                <option value="choose_state">Choose State</option>
                 <option value="Al">Alaska</option>
                 <option value="Al">Alabama</option>
                 <option value="AR">Arkansas</option>
@@ -111,9 +116,9 @@
 
         <p>Newsletter format</p>
 
-        <input type="radio" id="html" value="html" name="html"><label for="html" class="light">HTML</label><br>
+        <input type="radio" id="html" value="html" name="button"><label for="html" class="light">HTML</label><br>
 
-        <input type="radio" id="plain_text" value="plain_text" name="plain_text"><label for="plain_text" class="light">Plain text</label>
+        <input type="radio" id="plain_text" value="plain_text" name="button"><label for="plain_text" class="light">Plain text</label>
 
         <p>Other topics you'd like to hear about</p>
 

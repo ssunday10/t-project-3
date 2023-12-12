@@ -14,18 +14,24 @@
     padding: 20px;
 }
 
+.section{
+  text-align: center;
+}
+
 body {
     text-align: left;
     font-family: 'Merriweather', serif;
     background-color: white;
 }
 
-.required:after form {
-    background-color: grey;
+.signup {
+  text-align: center;
+  padding: 0px 4px;
+  font-size: .8em;
 }
 
-.information, .newsletter {
-    border: none;
+.newsletter {
+  border: none;
 }
 
 
@@ -77,4 +83,13 @@ button {
     text-align: center;
     font-style: Italic;
     font-size: 0.8em;
+  }
+
+
+
+  /* Media Queries */
+
+  @media screen and (min-width: 768px) {
+
+    
   }
