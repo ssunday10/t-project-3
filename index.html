@@ -21,7 +21,7 @@
         <fieldset class="information">
             
             <legend><h3>Contact Information</h3></legend>
-        
+        <div class="container">
         <div class="flex">
             <label for="name">Full Name</label>
             <input type="text" id="name" name="user_name" placeholder="Required">
@@ -29,22 +29,22 @@
 
         <div class="flex">
             <label for="email">Email Address</label>
-            <input type="text" id="email" name="user_email" placeholder="Required">
+            <input type="email" id="email" name="user_email" placeholder="Required">
         </div>
 
         <div class= "flex">
             <label for="number">Phone Number</label>
-            <input type="text" id="number" name="user_number">
+            <input type="number" id="number" name="user_number" placeholder="Phone #">
         </div>
 
         <div class="flex">
             <label for="address">Street Address</label>
-            <input type="text" id="address" name="user_address">
+            <input type="text" id="address" name="user_address" placeholder="No P.O. Box">
         </div>
 
         <div class="flex">
             <label for="city">City</label>
-            <input type="text" id="city" name="user_city">
+            <input type="text" id="city" name="user_city" placeholder="City">
         </div>
 
         <div class="flex">
@@ -108,15 +108,15 @@
         <div class="flex">
 
             <label for="zip_code">Zip Code</label>
-            <input type="text" id="zip_code" name="user_zip_code">
+            <input type="text" id="zip_code" name="user_zip_code" placeholder="Enter Zip Code">
         </div>
+        </div>          
     </fieldset>
     <fieldset class="newsletter">
 
-    <h2>Newsletter</h2>
-        <p>Select the newsletters you would like to receive</p>
+    <legend><h2>Newsletter</h2></legend>
+        <h4>Select the newsletters you would like to receive</h4>
 
-        
         <input type="checkbox" id="HTML_News" value="HTML_News" name="HTML_News"><label for=HTML_News>HTML News</label><br>
 
     
@@ -125,19 +125,22 @@
         
         <input type="checkbox" id="javascript_news" value="javascript_news" name="javascript_news"><label for="javascript_news">Javascript News</label><br>
 
-        <p>Newsletter format</p>
+    
+        <h3>Newsletter format</h3>
 
         <input type="radio" id="html" value="html" name="button"><label for="html" class="light">HTML</label><br>
 
-        <input type="radio" id="plain_text" value="plain_text" name="button"><label for="plain_text" class="light">Plain text</label>
+        <input type="radio" id="plain_text" value="plain_text" name="button"><label for="plain_text" class="light">Plain text</label><br>
 
-        <p>Other topics you'd like to hear about</p>
-
-        <textarea placeholder="please add text here"></textarea>
-
+    
+        <label for="topics">
+       Other topics you'd like to hear about
+            </label>
+          <textarea id="topics" name="blank">text here</textarea>
+           
 </fieldset>
         <button type="submit">Sign Up</button>
-    </form>
+</form>
 
 <footer>
     <p class="copyright">Copyright The Code Review</p>

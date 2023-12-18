@@ -102,21 +102,35 @@ button {
     font-size: 0.8em;
   }
 
-  input[type="text"], select[id="state"], textarea:hover {
-    color: blue;
-    transition: width 2s, height 4s;
+ #name:focus, #state:focus, textarea:focus {
+    color: black;
+    background-color: lightcoral;
   }
-  
+
+
+  #zip_code {
+    width: 50%;
+  }
   /* Media Queries */
 
   @media screen and (min-width: 768px) {
 
 .flex {
     display: flex;
-    justify-content: space-between;
-    margin: 5px;
-    width: 100%;
+    flex-basis: 50%;
+    
 }
+
+#zip_code {
+  width: 25%;
+}
+
+
+.information, .flex {
+  width: 100%;
+  justify-content: space-between;
+}
+
 
 input[type="text"],
 input[type="email"],
@@ -139,4 +153,5 @@ select {
   box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
   margin-bottom: 30px;
 }
+
   }
