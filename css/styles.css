@@ -2,7 +2,6 @@
     box-sizing: border-box;
 }
 
-
 .code {
     background: darkslategrey;
     border-bottom: 2px solid black;
@@ -59,7 +58,7 @@ input[type="checkbox"] {
 
 input[type="text"],
 input[type="email"],
-input[type="number"],
+input[type="tel"],
 input[type="state"],
 input[type="address"],
 input[type="number"],
@@ -78,6 +77,7 @@ select {
   color: #8a97a0;
   box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
   margin-bottom: 30px;
+  transition: 2s ease, lightcoral 1s ease-in-out;
 }
 
 
@@ -102,7 +102,7 @@ button {
     font-size: 0.8em;
   }
 
- #name:focus, #state:focus, textarea:focus {
+ .container input:focus, #name:focus, #state:focus, textarea:focus {
     color: black;
     background-color: lightcoral;
   }
@@ -110,6 +110,7 @@ button {
 
   #zip_code {
     width: 50%;
+    float: right;
   }
   /* Media Queries */
 
@@ -117,24 +118,28 @@ button {
 
 .flex {
     display: flex;
-    flex-basis: 50%;
-    
 }
 
 #zip_code {
   width: 25%;
 }
 
+label {
+  width: 50%;
+}
 
-.information, .flex {
+input {
+  width: 80%;
+}
+
+.flex, .information{
   width: 100%;
-  justify-content: space-between;
 }
 
 
 input[type="text"],
 input[type="email"],
-input[type="number"],
+input[type="tel"],
 input[type="state"],
 input[type="address"],
 input[type="number"],
