@@ -110,29 +110,36 @@ button {
 
   #zip_code {
     width: 50%;
-    float: right;
+    justify-content: right;
   }
+  
+  .flex {
+    display: flex;
+    flex-direction: column;
+  }
+
   /* Media Queries */
 
   @media screen and (min-width: 768px) {
 
 .flex {
-    display: flex;
+  flex-direction: row;
 }
 
 #zip_code {
   width: 25%;
+  align-items: center;
 }
 
-label {
+.insert {
   width: 50%;
 }
 
-input {
-  width: 80%;
+.output {
+  width: 100%;
 }
 
-.flex, .information{
+.flex, .information {
   width: 100%;
 }
 
@@ -143,7 +150,6 @@ input[type="tel"],
 input[type="state"],
 input[type="address"],
 input[type="number"],
-input[type="zip_code"],
 select {
   background: rgba(255,255,255,0.1);
   border: none;
@@ -159,4 +165,4 @@ select {
   margin-bottom: 30px;
 }
 
-  }
+} 
